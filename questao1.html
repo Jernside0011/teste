@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade30/07</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            background-color:rgba(21, 9, 91, 0.357);
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px solid black;
+         }
+
+        form{
+            padding: 20px;
+            border-radius: 10px;
+            width: 500px;
+            
+        }
+        fieldset{
+            border: 5px solid black;
+            padding: 20px;
+            border-radius: 5px; 
+            background-color: rgba(97, 7, 90, 0.529);
+            
+        }
+        legend{
+            font-weight: bold;
+            padding: 0 10px;
+            color: rgba(0, 0, 0, 0.779);
+            font-size: large;
+        }
+        label{
+            display: inline-block;
+            width: 100px;
+            text-align: left;
+            padding: 10px;
+            font-size: large; 
+             }
+        input[type=text]{
+            width: 300px;
+        }
+        input[type=number]{
+            width: 50px;
+        }
+        input[type=time]{
+            width: 200px;
+        }
+
+        input[type=text]
+        input[type=time]
+        input[type=number]{
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block; 
+ 
+                  
+        }
+        input[type=submit]{
+        background-color: #4CAF50;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+        border: solid black;
+        margin: 10px 200px 0px;
+
+        }
+        input[type=submit] :hover{
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Disciplina</legend>
+            <p><label for="id_nome">Nome:</label>
+            <input type="text" id="id_nome" name="nome"></p>
+            <p><label for="id_creditos">Créditos:</label>
+            <input type="text" id="id_creditos" name="creditos"></p>
+            <p><label for="id_tipo">Tipo:</label>
+            <input type="text" id="id_tipo" name="tipo"></p>
+            <p><label for="id_carga_horaria">Carga Horária:</label>
+            <input type="time" id="id_carga_horaria" name="carga_horaria"></p>
+            <p><label for="id_folhas">Limite de Folhas:</label>
+            <input type="number" id="id_folhas" name="limite_de_folhas"></p>
+            <input type="submit" value="Salvar">
+                
+                
+                
+                
+        </fieldset>
+    </form>
+    
+</body>
+</html>

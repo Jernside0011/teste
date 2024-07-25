@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade30/07</title>
+    <style>
+        body{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+        border-radius: 5px solid black;
+        }
+        form{
+        border-radius: 10px;
+        padding: 20px;
+        width: 700px;
+        background-color: cornflowerblue;
+        }
+        fieldset{
+        border: 10px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        }
+        legend{
+        font-weight: 800;
+        font-size: larger;
+        padding: 0 10px;
+        }
+        label{
+        display: inline-block;
+        text-align: left;
+        padding: 10px;
+        width: 100px;
+
+        }
+        input[type=text]{
+        width: 300px;
+        border-radius: 5px;
+        border: 3px solid black;
+        display: inline-block;
+        }
+        input[type=submit]{
+        background-color: rgb(125, 116, 134);
+        border: 10px;
+        border-radius: 5px;
+        padding: 10px 10px;
+        display: block;
+        border: solid black;
+        }
+        table{
+        border: 5px solid black;
+        width: 100%;
+        border-collapse: collapse;
+        align-items: center;
+        }
+        thead{
+            vertical-align: middle;
+            width: 5px;
+        }
+        td,th{
+        border: 2.5px solid black;
+        text-align: center;
+        text-decoration: black;
+        font-size: large;
+        font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <legend>Pesquisa Especialidade</legend>
+        <p><label for="id_nome">Nome:</label>
+        <input type="text" id="id_nome" name="nome"></p>
+        <p><label for="id_tipo">Tipo:</label>
+        <input type="text" id="id_tipo" name="tipo"></p>
+        <input type="submit" value="Pesquisar">
+    <hr>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Crédito</th>
+            <th>Falta</th>
+        </thead>
+        <tr>
+            <td>Introdução a Programação</td>
+            <td>P</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Tecnologia Web I</td>
+            <td>P</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Estrutura de Dados</td>
+            <td>P</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Estatística</td>
+            <td>P</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Redes I</td>
+            <td>P</td>
+            <td>4</td>
+            <td>20</td>
+        </tr>
+    </table>
+        </fieldset>
+    </form>    
+</body>
+</html>
