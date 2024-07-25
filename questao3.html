@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+         }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;}
+        thead{
+            vertical-align: middle;
+            width: 5px;
+        }
+        td,th{
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <form action=""></form>
+    <fieldset>
+    <fieldset>
+        <legend>Produtos</legend>
+        <p><label for="id_codigo">Código:</label>
+        <input type="number" name="codigo" id="id_codigo"></p>
+        <p><label for="id_descricao">Descrição:</label>
+        <input type="text" name="descricao" id="id_descricao"></p>
+        <p><label for="id_Qtd">Quantidade:</label>
+        <input type="number" name="quantidade" id="id_Qtd"></p>
+        <p><label for="id_perecivel">Perecivel:</label>
+        <select name="perecivel" id="id_perecivel">
+            <option value="">Selecione</option>
+            <option value="">Sim</option>
+            <option value="">Não</option>
+        </select>
+        <label for="id_validade">Validade:</label>
+        <input type="date" name="validade" id="id_validade"></p>
+        <br>
+        <p><input type="submit" value="Salvar" style="background-color: green;">
+        <input type="submit" value="Cancelar" style="background-color:red;"></p>
+    </fieldset>
+    <fieldset>
+        <legend>Lista de Produtos</legend>
+        <p><label for="id_descricao">Descrição:</label>
+        <input type="text" name="descricao" id="id_descricao">
+        <input type="submit" value="Pesquisar"></p>
+        <br>
+        <table>
+            <thead>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Perecivel</th>
+                <th>Validade</th>
+            </thead>
+            <tr>
+                <td>A</td>
+                <td>10</td>
+                <td>Não</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>145</td>
+                <td>Sim</td>
+                <td>10/10/2015</td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>9</td>
+                <td>Não</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>55</td>
+                <td>Sim</td>
+                <td>10/01/2017</td>
+            </tr>
+            
+        </table>
+    </fieldset>
+    </fieldset>
+
+        
+   
+        
+
+</body>
+</html>
